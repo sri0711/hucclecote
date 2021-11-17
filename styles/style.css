@@ -7,6 +7,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body #progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #175e9c;
+  z-index: 100000;
+}
+
 body header .navbar {
   z-index: 99;
   background-color: transparent !important;
