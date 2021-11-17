@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body header {
@@ -13,19 +15,70 @@ body header .navbar .navbar-brand img {
   height: 50px;
 }
 
+body header .navbar .navbar-brand h1 {
+  color: #175e9c !important;
+  font-weight: 600;
+}
+
+body header .navbar .nav-link {
+  color: #175e9c !important;
+  font-weight: 400;
+}
+
+body header .navbar .nav-link:hover,
+body header .navbar .nav-link:active {
+  color: white !important;
+  background-color: #175e9c !important;
+  font-weight: 600;
+}
+
+body header .navbar .navbar-toggler:focus,
+body header .navbar .navbar-toggler:active,
+body header .navbar .navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 body .page1 {
-  z-index: -1;
-  height: 80vh;
+  height: 100vh;
+}
+
+body .page1 .carousel-item img {
+  min-width: 100vw;
+  width: auto;
+  height: 100vh;
 }
 
 body .page1 .cnt {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 25px 20px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-size: 100px;
+  background: rgba(51, 123, 208, 0.15);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(51, 123, 208, 0.42);
+}
+
+body .page1 .cnt p {
+  font-size: larger;
+}
+
+body .page1 .cnt h1 {
+  font-size: xx-large;
+}
+
+body .page1 .cnt a {
+  background-color: #175e9c;
+  color: white;
+  font-weight: 700;
 }
 
 body .page2 {
