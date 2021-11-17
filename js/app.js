@@ -5,7 +5,7 @@ $(document).ready(function () {
     var objectSelect = $("#services");
     var objectPosition = objectSelect.offset().top;
 
-    if (scroll > objectPosition - 100) {
+    if (scroll > objectPosition - 80) {
       $("#navmain").fadeIn();
     } else {
       $("#navmain").fadeOut();
