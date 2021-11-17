@@ -50,7 +50,8 @@ body {
 		}
 	}
 	.page1 {
-		height: 100vh;
+		min-height: 100vh;
+		height: max-content;
 		.carousel-item {
 			img {
 				min-width: 100vw;
