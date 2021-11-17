@@ -1,35 +1,36 @@
 $(document).ready(function () {
-  $("#navmain").fadeOut();
-  $(window).scroll(() => {
-    var scroll = $(window).scrollTop();
-    var objectSelect = $("#services");
-    var objectPosition = objectSelect.offset().top;
+	$('#navmain').fadeOut();
+	$(window).scroll(() => {
+		var scroll = $(window).scrollTop();
+		var objectSelect = $('#services');
+		var objectPosition = objectSelect.offset().top;
 
-    if (scroll > objectPosition - 80) {
-      $("#navmain").fadeIn();
-    } else {
-      $("#navmain").fadeOut();
-    }
-  });
+		if (scroll > objectPosition - 80) {
+			$('#navmain').fadeIn();
+		} else {
+			$('#navmain').fadeOut();
+		}
+	});
 });
 
-var nav = document.getElementById("navbar");
-var navlink = document.getElementsByClassName("nav-link");
+var nav = document.getElementById('navbar');
+var navlink = document.getElementsByClassName('nav-link');
 
 for (var i = 0; i < navlink.length; i++) {
-  navlink[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active1");
-    current[0].className = current[0].className.replace(" active1", "");
-    this.className += " active1";
-  });
+	navlink[i].addEventListener('click', function () {
+		var current = document.getElementsByClassName('active1');
+		current[0].className = current[0].className.replace(' active1', '');
+		this.className += ' active1';
+	});
 }
 
 const scrollProgress = document.getElementById('progress');
 const height =
-  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	document.documentElement.scrollHeight -
+	document.documentElement.clientHeight;
 
 window.addEventListener('scroll', () => {
-  const scrollTop =
-    document.body.scrollTop || document.documentElement.scrollTop;
-  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+	const scrollTop =
+		document.body.scrollTop || document.documentElement.scrollTop;
+	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
