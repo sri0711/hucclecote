@@ -41,10 +41,10 @@
 				"
 				id="navbar"
 			>
-				<div class="container-fluid d-flex justify-content-between">
-					<a class="navbar-brand mx-3 d-flex" href="#">
+				<div class="container-fluid">
+					<a class="navbar-brand mx-3 d-flex align-items-center" href="#">
 						<img src="./images/ll.svg" alt="logo" />
-						<h1 class="mx-3">Hucclecote</h1>
+						<h1 class="mx-3 my-0">Hucclecote</h1>
 					</a>
 					<button
 						class="navbar-toggler"
@@ -57,23 +57,34 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav d-flex justify-content-center justify-content-md-end mx-3">
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarNavAltMarkup"
+					>
+						<div
+							class="
+								navbar-nav
+								d-flex
+								align-self-end
+								justify-content-center justify-content-md-end
+								mx-3
+							"
+						>
 							<a
 								class="nav-link active1 btn"
 								aria-current="page"
 								href="#services"
 								>Services</a
 							>
-							<a class="nav-link btn" href="#">Industry</a>
-							<a class="nav-link btn" href="#">Carrier</a>
-							<a class="nav-link btn" href="#">Contact Us</a>
+							<a class="nav-link btn" href="#industry">Industry</a>
+							<a class="nav-link btn" href="#carrier">Carrier</a>
+							<a class="nav-link btn" href="#contact">Contact Us</a>
 						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<div class="page1">
+		<div class="page1 mb-5">
 			<div
 				id="carouselExampleSlidesOnly"
 				class="carousel slide"
@@ -112,10 +123,74 @@
 				</div>
 			</div>
 		</div>
-		<div class="page2" id="services">
-      <div class="tit "></div>
-    </div>
-		<div class="page2" id="industry"></div>
+		<div class="page2 pt-5 d-flex justify-content-center" id="services">
+			<div
+				class="
+					tit
+					d-flex
+					justify-content-center
+					align-items-center
+					flex-column
+					w-75
+				"
+			>
+				<h1 class="">Services</h1>
+				<p class="w-25 mt-2 d-flex justify-content-centerd">
+					<span></span>
+				</p>
+			</div>
+		</div>
+		<div class="page3 pt-5 d-flex justify-content-center" id="industry">
+			<div
+				class="
+					tit
+					d-flex
+					justify-content-center
+					align-items-center
+					flex-column
+					w-75
+				"
+			>
+				<h1 class="">Industry</h1>
+				<p class="w-25 mt-2 d-flex justify-content-centerd">
+					<span></span>
+				</p>
+			</div>
+		</div>
+		<div class="page4 pt-5 d-flex justify-content-center" id="carrier">
+			<div
+				class="
+					tit
+					d-flex
+					justify-content-center
+					align-items-center
+					flex-column
+					w-75
+				"
+			>
+				<h1 class="">Carrier</h1>
+				<p class="w-25 mt-2 d-flex justify-content-centerd">
+					<span></span>
+				</p>
+			</div>
+		</div>
+		<div class="page5 pt-5 d-flex justify-content-center" id="contact">
+			<div
+				class="
+					tit
+					d-flex
+					justify-content-center
+					align-items-center
+					flex-column
+					w-75
+				"
+			>
+				<h1 class="">Contact Us</h1>
+				<p class="w-25 mt-2 d-flex justify-content-centerd">
+					<span></span>
+				</p>
+			</div>
+		</div>
 
 		<script src="./js/app.js"></script>
 	</body>
