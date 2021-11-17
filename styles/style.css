@@ -53,7 +53,10 @@ body header .navbar .navbar-toggler-icon:focus {
 }
 
 body .page1 {
-  height: 100vh;
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 body .page1 .carousel-item img {
