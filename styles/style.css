@@ -94,6 +94,15 @@ body .page1 .cnt {
   border: 1px solid rgba(51, 123, 208, 0.42);
 }
 
+body .page1 .cnt span {
+  text-align: center;
+  font-size: 10vw;
+  font-weight: bold;
+  color: rgba(23, 94, 156, 0.45);
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+
 body .page1 .cnt p {
   font-size: larger;
   text-align: center;
@@ -111,19 +120,44 @@ body .page1 .cnt a {
 }
 
 body .page2 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body .page3 {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+body .page3 h3 {
+  color: #175e9c;
+}
+
+body .page3 ul {
+  list-style: none;
+}
+
+body .page3 ul li {
+  margin: 3px;
+}
+
+body .page3 ul li:hover {
+  color: #175e9c;
+}
+
+body .page3 .box {
+  min-width: 50%;
+}
+
+body .page3 .box-align {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 body .page4 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body .page5 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .tit {

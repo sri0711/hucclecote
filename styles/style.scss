@@ -83,6 +83,14 @@ body {
 			backdrop-filter: blur(6.7px);
 			-webkit-backdrop-filter: blur(6.7px);
 			border: 1px solid rgba(51, 123, 208, 0.42);
+			span {
+				text-align: center;
+				font-size: 10vw;
+				font-weight: bold;
+				color: rgba(23, 94, 156, 0.45);
+				-webkit-text-stroke: 1px white;
+				text-transform: uppercase;
+			}
 			p {
 				font-size: larger;
 				text-align: center;
@@ -99,17 +107,36 @@ body {
 		}
 	}
 	.page2 {
-		height: 100vh;
-		
+		min-height: 100vh;
 	}
 	.page3 {
-		height: 100vh;
+		min-height: 100vh;
+		h3 {
+			color: rgb(23, 94, 156);
+		}
+		ul {
+			list-style: none;
+			li {
+				margin: 3px;
+			}
+
+			li:hover {
+				color: rgb(23, 94, 156);
+			}
+		}
+		.box{
+			min-width: 50%;
+		}
+		.box-align{
+			align-self: flex-start;
+
+		}
 	}
 	.page4 {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.page5 {
-		height: 100vh;
+		min-height: 100vh;
 	}
 }
 
