@@ -8,10 +8,20 @@
 }
 
 body {
+	#progress {
+		position: fixed;
+		top: 0;
+		width: 0%;
+		height: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+		background-color: rgb(23, 94, 156);
+		z-index: 100000;
+	}
 	header {
 		.navbar {
 			z-index: 99;
-      background-color: transparent !important;
+			background-color: transparent !important;
 			.navbar-brand {
 				img {
 					height: 50px;
