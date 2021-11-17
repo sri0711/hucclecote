@@ -49,6 +49,7 @@ for (var i = 0; i < navlink.length; i++) {
 }
 
 const scrollProgress = document.getElementById('progress');
+const scrollProgress1 = document.getElementById('progress1');
 const height =
 	document.documentElement.scrollHeight -
 	document.documentElement.clientHeight;
@@ -57,4 +58,5 @@ window.addEventListener('scroll', () => {
 	const scrollTop =
 		document.body.scrollTop || document.documentElement.scrollTop;
 	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+	scrollProgress1.style.width = `${(scrollTop / height) * 100}%`;
 });
