@@ -24,15 +24,19 @@ body #progress1 {
   right: 0;
   width: 0%;
   height: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: #175e9c;
   z-index: 100000;
 }
 
 body header .navbar {
   z-index: 99;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
 }
 
 body header .navbar .navbar-brand img {
@@ -98,7 +102,7 @@ body .page1 .cnt span {
   text-align: center;
   font-size: 10vw;
   font-weight: bold;
-  color: rgba(23, 94, 156, 0.45);
+  color: rgba(23, 94, 156, 0.55);
   -webkit-text-stroke: 1px white;
   text-transform: uppercase;
 }
@@ -137,6 +141,7 @@ body .page3 ul {
 
 body .page3 ul li {
   margin: 3px;
+  font-weight: 600;
 }
 
 body .page3 ul li:hover {
@@ -153,7 +158,28 @@ body .page3 .box-align {
 }
 
 body .page4 {
-  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .page4 .subhead h3 {
+  color: #175e9c;
+  font-weight: 700;
+}
+
+body .page4 .subhead p {
+  font-weight: 500;
+}
+
+body .page4 .subhead p a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body .page4 .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body .page5 {

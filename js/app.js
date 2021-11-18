@@ -1,3 +1,5 @@
+// hiding nav bar
+
 $(document).ready(function () {
 	$('#navmain').fadeOut();
 	$(window).scroll(() => {
@@ -37,17 +39,8 @@ $(document).ready(function () {
 	});
 });
 
-var nav = document.getElementById('navbar');
-var navlink = document.getElementsByClassName('nav-link');
 
-for (var i = 0; i < navlink.length; i++) {
-	navlink[i].addEventListener('click', function () {
-		var current = document.getElementsByClassName('active1');
-		current[0].className = current[0].className.replace(' active1', '');
-		this.className += ' active1';
-	});
-}
-
+// scroll progress bar
 const scrollProgress = document.getElementById('progress');
 const scrollProgress1 = document.getElementById('progress1');
 const height =
@@ -59,4 +52,9 @@ window.addEventListener('scroll', () => {
 		document.body.scrollTop || document.documentElement.scrollTop;
 	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 	scrollProgress1.style.width = `${(scrollTop / height) * 100}%`;
+});
+
+// nav bar collaps
+$('.navbar-nav>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
 });
