@@ -39,7 +39,6 @@ $(document).ready(function () {
 	});
 });
 
-
 // scroll progress bar
 const scrollProgress = document.getElementById('progress');
 const scrollProgress1 = document.getElementById('progress1');
@@ -50,11 +49,13 @@ const height =
 window.addEventListener('scroll', () => {
 	const scrollTop =
 		document.body.scrollTop || document.documentElement.scrollTop;
-	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-	scrollProgress1.style.width = `${(scrollTop / height) * 100}%`;
+	let scrollValue = (scrollTop / height) * 100;
+	console.log(scrollValue);
+	scrollProgress.style.width = `${scrollValue}%`;
+	scrollProgress1.style.width = `${scrollValue}%`;
 });
 
 // nav bar collaps
-$('.navbar-nav>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
+$('.navbar-nav>a').on('click', function () {
+	$('.navbar-collapse').collapse('hide');
 });
